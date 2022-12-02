@@ -40,7 +40,7 @@ A platform that allows schools in a certain locality list directory of people ow
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ## Authors
-- [Jennifer Augustine](https://www.github.com/JnnyAdah)
+- [Jennifer Augustine](https://www.github.com/JnnyAdah target= "_blank")
 - [Add your name](https://www.github.com/your-username)
 
 
