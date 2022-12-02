@@ -38,3 +38,9 @@ A platform that allows schools in a certain locality list directory of people ow
 
 * __Project Management and Version Control__<br/>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+## Authors
+- [Add your name](https://www.github.com/your-username)
+- [Add your name](https://www.github.com/your-username)
+
+
