@@ -4,6 +4,8 @@ A platform that allows schools in a certain locality list directory of people ow
 
 [**Live link**](https://zuri-training.github.io/My_debtors_TeamGorillapp/)
 
+
+
 ## Feature Requests
 
 ### User: Unauthenticated.
@@ -22,7 +24,9 @@ A platform that allows schools in a certain locality list directory of people ow
 - Copy should be disabled
 
 
-### **_Fork and Clone Repository_**
+
+
+## Fork and Clone Repository
 
 1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/AuthWiki_Team9
 2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.
