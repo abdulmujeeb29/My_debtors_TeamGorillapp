@@ -25,7 +25,6 @@ A platform that allows schools in a certain locality list directory of people ow
 
 
 
-
 ## Fork and Clone Repository
 
 1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/AuthWiki_Team9
@@ -39,14 +38,14 @@ A platform that allows schools in a certain locality list directory of people ow
    - In your Terminal, type:
      `git clone https://github.com/github_username/AuthWiki_Team9.git`
 
-### **_Add "Remote To" and "Pull From" Upstream_**
+### Add "Remote To" and "Pull From" Upstream
 
 4. Add a Remote to Upstream to your Repo:
    - In your terminal, type:
      `git clone https://github.com/github_username/AuthWiki_Team9.git`
 5. Pull from upstream to download all changes in the project using `git pull upstream main`
 
-### **_Finish assigned Task / Issue_**
+### Finish assigned Task / Issue
 
 6. Open the Project up in your code Editor
 7. Complete your assigned task / Feature on your local machine.
@@ -61,19 +60,20 @@ A platform that allows schools in a certain locality list directory of people ow
 
 <!-- - _\* Note: if the Feature is a bug fix, use `bug:message` for your branch and commit message_ -->
 
-### **_Push New Branch to "Origin" Repository_**
+### Push New Branch to "Origin" Repository
 
 9. To make sure there are no conflict, Pull from upstream using `git pull upstream main`
 10. Push your branch changes to the Repo using
     `git push upstream main`
 
-### **_Create Pull Request_**
+### Create Pull Request
 
 11. Once you push the changes to your repo, the **_`Compare & pull request`_** button will appear in GitHub page of your repo.
 12. Click the button and make your request. Leave a comment in your request
 13. Click Create pull request to open a new pull request
 
-### **_`If you are asked to make changes on the same feature, repeat steps 8 to 13 to add more commits to your pull request.`_**
+#### **_`If you are asked to make changes on the same feature, repeat steps 8 to 13 to add more commits to your pull request.`_**
+
 
 
 ## Languages
@@ -95,6 +95,8 @@ A platform that allows schools in a certain locality list directory of people ow
 * __Project Management and Version Control__<br/>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+
+
 ## Authors
 - [Jennifer Augustine ](https://www.github.com/JnnyAdah)
 - [Anthony Anyanwu](https://www.github.com/tonyanyanwu5448)
@@ -103,8 +105,6 @@ A platform that allows schools in a certain locality list directory of people ow
 - [Tolulope Adeniran](https://www.github.com/TolexA)
 - [Tiamiyu Abdulmujeeb](https://www.github.com/abdulmujeeb29)
 - [Adeniyi Ebenezer](https://www.github.com/tonyanyanwu5448)
-
-
 
 
 
