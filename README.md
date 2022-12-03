@@ -2,6 +2,7 @@
 
 A platform that allows schools in a certain locality list directory of people owing them to help them avoid going to other schools.
 
+-[Live link](https://zuri-training.github.io/My_debtors_TeamGorillapp/)
 
 ## Feature Requests
 
@@ -47,6 +48,9 @@ A platform that allows schools in a certain locality list directory of people ow
 - [Tolulope Adeniran](https://www.github.com/TolexA)
 - [Tiamiyu Abdulmujeeb](https://www.github.com/abdulmujeeb29)
 - [Adeniyi Ebenezer](https://www.github.com/tonyanyanwu5448)
+
+
+
 
 
 ## Acknowledgements 🚀 
