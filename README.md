@@ -41,6 +41,11 @@ A platform that allows schools in a certain locality list directory of people ow
 
 ## Authors
 - [Jennifer Augustine ](https://www.github.com/JnnyAdah)
-- [Add your name](https://www.github.com/your-username)
+- [Anthony Anyanwu](https://www.github.com/tonyanyanwu5448)
+- [Bunmi Akapo](https://www.github.com/B-Akapo)
+- [Yusuf Makanjuola](https://www.github.com/uumak)
+- [Tolulope Adeniran](https://www.github.com/TolexA)
+- [Tiamiyu Abdulmujeeb](https://www.github.com/abdulmujeeb29)
+- [Adeniyi Ebenezer](https://www.github.com/tonyanyanwu5448)
 
 
