@@ -32,17 +32,17 @@ A platform that allows schools in a certain locality list directory of people ow
 3. Make a Local Clone: Clone the forked repository to your local machine (computer)
 
    - Click on the "Code" button on the Repo page
-   - Copy the URL for the forked Repo "https://github.com/github_username/AuthWiki_Team9.git"
+   - Copy the URL for the forked Repo "https://github.com/zuri-training/My_debtors_TeamGorillapp.git"
    - Create a Folder on your Local machine / Computer for the project Workspace
    - Open Command prompt / Terminal in the same folder location
    - In your Terminal, type:
-     `git clone https://github.com/github_username/AuthWiki_Team9.git`
+     `git clone https://github.com/zuri-training/My_debtors_TeamGorillapp.git`
 
 ### Add "Remote To" and "Pull From" Upstream
 
 4. Add a Remote to Upstream to your Repo:
    - In your terminal, type:
-     `git clone https://github.com/github_username/AuthWiki_Team9.git`
+     `git clone https://github.com/zuri-training/My_debtors_TeamGorillapp.git`
 5. Pull from upstream to download all changes in the project using `git pull upstream main`
 
 ### Finish assigned Task / Issue
