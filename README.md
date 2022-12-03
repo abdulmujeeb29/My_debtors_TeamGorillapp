@@ -27,7 +27,7 @@ A platform that allows schools in a certain locality list directory of people ow
 
 ## Fork and Clone Repository
 
-1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/AuthWiki_Team9
+1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/My_debtors_TeamGorillapp
 2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.
 3. Make a Local Clone: Clone the forked repository to your local machine (computer)
 
