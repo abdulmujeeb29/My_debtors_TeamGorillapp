@@ -49,3 +49,12 @@ A platform that allows schools in a certain locality list directory of people ow
 - [Adeniyi Ebenezer](https://www.github.com/tonyanyanwu5448)
 
 
+## Acknowledgements 🚀 
+
+<p>
+  <img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/wmqxdxt4skv05wsvc21o.png"
+       alt="Zuri Logo"
+  >
+</p>
+
+
