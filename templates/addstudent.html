@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Add Student Form</title>
 	<style>
+        
 *{
   margin: 0;
   padding: 0;
@@ -184,10 +185,11 @@ body{
 
 
     </style>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
 <body>
+
 
 <div class="wrapper">
     <div class="title">
@@ -195,8 +197,10 @@ body{
     </div>
     
     <div class="form">
-        <form action="addstudent"  method="POST" >
-            {% csrf_token %}
+        <form id="post_form " >
+          {% csrf_token %}
+
+            <h5 ></h5>
        <div class="inputfield">
           <label>Full Name</label>
           <input type="text" name="Name" id="Name" class="input">
@@ -239,44 +243,33 @@ body{
       
        
       <div class="inputfield">
-        <input type="submit" id="add" value="Add" class="btn">
+        <input type="submit" id="submit" value="submit" class="btn">
       </div>
       </form>
     </div>
 </div>	
-<script type="text/javascript">	
-$(document).ready(function(){
-    $('#add').on('click', function(){
-        $school_id = $('#school_id').val();
-        $Name = $('#Name').val();
-        $Class = $('#Class').val();
-        $debt_owed = $('#debt_owed').val();
+
+<script type="text/javascript">
+    $(document).on('submit','#post-form',function(e){
+      e.preventDefault();
   
-        if($school_id == "" || $Name == "" || $Class == "" || $debt_owed == ""){
-            alert("Please complete field");
-        }else{
-            $.ajax({
-                type: "POST",
-                url: "http://127.0.0.1:8000/post",
-                data:{
-                    school_id: $school_id,
-                    Name: $Name,
-                    Class: $Class,
-                    debt_owed: $debt_owed,
-                    csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
-                },
-                success: function(){
-                    alert('Save Data');
-                    // $('#school_id').val('');
-                    // $('#Name').val('');
-                    // $('#Class').val('');
-                    // $('#debt_owed').val('');
-                    window.location = "addstudent";
-                }
-            });
+      $.ajax({
+        type:'POST',
+        url:'/create',
+        data:{
+            school_id:$('#school_id').val(),
+            Name:$('#Name').val(),
+            Class:$('#Class').val(),
+            debt_owed:$('#debt_owed').val(),
+          csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+        },
+        success: function(data){
+            $("h5").html(data)
+          //alert(data)
         }
+      });
+    //   document.getElementById('message').value = ''
     });
-});
-</script>
+  </script>
 </body>
 </html>

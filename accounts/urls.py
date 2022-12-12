@@ -17,6 +17,8 @@ urlpatterns = [
     path('faq',views.faq,name='faq'),
     path('addstudent',views.addstudent,name='addstudent'),
     path('forgot',views.forgot,name='forgot'),
+    path('create',views.create,name='create'),
+    path('testimonial',views.testimonial,name='testimonial'),
 
 ]
 

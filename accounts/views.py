@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view,permission_classes
 from rest_framework.response import Response 
 from accounts.serializer import StudentSerializer
 from . models import *
-from django.http import HttpResponse
+from django.http import HttpResponse , JsonResponse
 from .permissions import IsAuthorOrReadOnly
 # Create your views here.
 
@@ -195,9 +195,28 @@ def contact_us(request):
 def faq(request):
     return render(request,'faq.html')
 
+import json 
+
 def addstudent(request):
     # student = Student(school_id = request.POST['school_id'],Name=request.POST['Name'],Class=request.POST['Class'],debt_owed =request.POST['debt_owed'])
     # student.save();
 
-    #return redirect('addstudent')
+    # return redirect('addstudent')
     return render(request,'addstudent.html')
+
+def create(request):
+    if request.method=='POST':
+        school_id =request.POST['school_id']
+        Name =request.POST['Name']
+        Class=request.POST['Class']
+        debt_owed =request.POST['debt_owed']
+
+        user = Student(school_id=school_id,Name=Name,Class=Class,debt_owed=debt_owed)
+        user.save();
+
+        success='Debtor profile created successfully'
+        return HttpResponse(success)
+
+
+def testimonial(request):
+    return render(request,'testimonial.html')

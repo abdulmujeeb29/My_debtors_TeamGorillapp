@@ -1,0 +1,277 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yobai -Testimonial</title>
+    <script src="{% static 'https://kit.fontawesome.com/b99e675b6e.js' %}"></script>
+	<script src=" {% static 'https://code.jquery.com/jquery-3.4.1.min.js' %}"></script>
+
+    <style>
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Lato";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.hero-text {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1.25px;
+  text-align: left;
+  color: #1687b9;
+  text-transform: uppercase;
+}
+.divider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-div {
+    display: flex;
+    flex-basis: 50%;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 5%;
+  /* justify-content: flex-start; */
+  min-height: 100vh;
+  border-right: 5px solid #1687b9;
+  /* justify-content: flex-start; */
+
+}
+
+.div-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 1.25px;
+  color: #1687b9;
+}
+
+.right-div {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 5%;
+  /* justify-content: flex-start; */
+  min-height: 100vh;
+
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  border-radius: 8px;
+  padding: 10px;
+}
+textarea {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 46px;
+  border-radius: 8px;
+  padding: 10px;
+}
+label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  letter-spacing: 1.25px;
+  color: #000000;
+}
+.upload-title{
+    font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  letter-spacing: 1.25px;
+  color: #1687b9;
+}
+.btn{
+    width: 100%;
+    background-color:#1687b9 ;
+    color: white;
+     border: none;
+}
+.live-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 3px;
+}
+.card{
+    width: 80%;
+    padding: 20px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: top;
+}
+img{
+   width: 100px;
+   height: 100px;
+   border-radius: 100%; 
+  
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.persona-details{
+    justify-content: left;
+    align-items: flex-start;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- html -->
+    <section class="container">
+      <div>
+        <h1 class="hero-text">Testimonial</h1>
+      </div>
+      <section class="divider-container">
+
+        <div class="left-div">
+          <h2 class="div-title">What Our Clients Say</h2>
+
+          <div class="live-comment">
+            <div class="card">
+                
+                
+                <img src=" {% static 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' %}" alt="avatar">
+                <div class="persona-details">
+                    <h3>Zakar Beans</h3>
+                    <p>This platform has been really helful to me. One time i paid my daughter's school fees online, i got a debit from the bank but the money did not get through to the school. I randomly just checked the app realized that my child had been listed as a debtor. It was later rectified by the bank and the process from the school was very smooth</p>
+                    <div class="rating">
+                        <span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            65</span>
+                        <div> <i class="fa fa-thumbs-down" aria-hidden="true"></i> 0</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                
+                <img src="{% static 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' %}" alt="avatar">
+             
+                <div class="persona-details">
+                    <h3>Andrew Nwanga</h3>
+                    <p>This platform has been really helful to me. One time i paid my daughter's school fees online, i got a debit from the bank but the money did not get through to the school. I randomly just checked the app realized that my child had been listed as a debtor. It was later rectified by the bank and the process from the school was very smooth</p>
+                    <div class="rating">
+                        <span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            65</span>
+                        <div> <i class="fa fa-thumbs-down" aria-hidden="true"></i> 0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                
+                <img src="{% static 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' %}" alt="avatar">
+            
+                <div class="persona-details">
+                    <h3>David Bliss</h3>
+                    <p>This platform has been really helful to me. One time i paid my daughter's school fees online, i got a debit from the bank but the money did not get through to the school. I randomly just checked the app realized that my child had been listed as a debtor. It was later rectified by the bank and the process from the school was very smooth</p>
+                    <div class="rating">
+                        <span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            65</span>
+                        <div> <i class="fa fa-thumbs-down" aria-hidden="true"></i> 0</div>
+                    </div>
+                </div>
+            </div>
+
+
+          </div>
+          
+          
+        </div>
+
+        <div class="right-div">
+          <h2 class="div-title">What Do You Have To Say</h2>
+          <form>
+            <div class="form-control">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                class="form-field fullname"
+                name="fullname"
+                id="fullname"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="comment">Comment</label>
+              <textarea
+                class="form-field comment"
+                name="comment"
+                id="comment"
+                rows="3"
+                placeholder="enter your comment here"
+                required
+              ></textarea>
+            </div>
+            <div class="form-control">
+              <h3 class="upload-title">Upload your picture</h3>
+              <input
+                type="file"
+                name="comment"
+                id="comment"
+                required
+              ></input>
+              
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Submit">
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
