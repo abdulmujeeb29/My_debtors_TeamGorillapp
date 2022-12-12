@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=" preconnect" href=" {% static 'https://fonts.googleapis.com' %}"><link rel="preconnect" href=" {% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href=" {% static 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src=" {% static 'images/websitelogo.svg' %}" alt="the website Logo" />
+    </header>
+    <main>
+      <section>
+        <!-- Sign-up AND LOG-IN -->
+        <div class="top">
+          <div class="Sign-Up">
+            <a href="#"> <p class="sign-up-">Sign-Up</p></a>
+          </div>
+          </div>
+        </div>
+        <!-- Regisgraction field -->
+        <div class="reg">
+        {% for message in messages %}
+          <h5>{{message}}</h5>
+          {% endfor %}
+          <form action="schoolregister" method="POST">
+            {% csrf_token%}
+            <div class="container">
+              <div class="container-header">
+                <h1 class="text-big">Sign Up as a School</h1>
+                <p class="text-small">
+                  Want to sign up as school? <a href="#"> Here </a>
+                </p>
+              </div>
+              <label for="schoolName"
+                ><b class="text-mid">School Name</b>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter School Name"
+                name="username"
+                required
+              />
+              <label for="schoolAddress">
+                <b class="text-mid">School Address</b></label
+              >
+              <input
+                type="text"
+                placeholder="Enter Address"
+                name="school_address"
+                required
+              />
+              <label for="yearFounded">
+                <b class="text-mid">Year Founded</b></label
+              >
+              <input
+                type="date"
+                placeholder="yearFounded"
+                name="year_founded"
+                required
+              />
+              <label for="Date of Accreditation"
+                ><b class="text-mid">Year Founded</b></label
+              >
+              <input
+                type="date"
+                placeholder="yearFounded"
+                name="date_of_accreditation"
+                required
+              />
+              <label for="accreditationNumber">
+                <b class="text-mid">Accreditation Number</b></label
+              >
+              <input
+                type="number"
+                placeholder="Enter number"
+                name="Accreditation_number"
+                required
+              />
+
+              <label for="email"><b class="text-mid">Email</b></label>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <label for="psw"><b class="text-mid">Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="password1"
+                required
+              />
+
+              <label for="psw-repeat"
+                ><b class="text-mid">Confirm Password</b></label
+              >
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="password2"
+                required
+              />
+              <hr />
+
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+          </form>
+          <div>
+            <img
+              src=" {% static 'images/schreg.svg' %}"
+              alt="sch registration Image"
+              height="840px"
+              width="635px"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

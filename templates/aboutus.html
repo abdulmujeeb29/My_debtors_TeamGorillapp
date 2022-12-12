@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}" />
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin />
+    <link
+      href=" {% static 'https://fonts.googleapis.com/css2?family=Lato&display=swap' %}"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      href="{% static 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- js link -->
+    <script src="{% static 'script.js' %}"></script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar">
+        <img src="{% static 'images/yobai-logo.png' %}" alt="" />
+        <hr />
+        <div class="navbar-menu">
+          <a href="/">Home</a>
+          <!-- <a href="#">About Us</a>
+          <a href="">Contact Us</a> -->
+        </div>
+        <!-- <div class="reg">
+          <a href="#" id="login">Log In<i class="ri-arrow-down-s-line"></i></a>
+          <a href="#" id="sign-up">Sign Up<i class="ri-arrow-down-s-line"></i></a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div> -->
+        <!-- <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div> -->
+      </nav>
+    </header>
+    <!-- Grid -->
+    <div class="container">
+      <div class="box1">
+        <h2>Our Vision</h2>
+        <p>
+          Yobai as a platform, looks to ensure that tuition fees in schools are
+          paid in full and the students in every school in the region receive
+          sound and quality education.
+        </p>
+      </div>
+      <div class="box2">
+        <img src=" {% static 'images/image-1.png' %}" class="grid-image">
+      </div>
+      <div class="box3">
+        <img src="{% static 'images/image-2.png' %}" class="grid-image">
+      </div>
+      <div class="box4">
+        <h2>Our Approach</h2>
+        <p>
+          Yobai uses non-conventional method to enhance the financial strength
+          of schools and school owners.
+        </p>
+      </div>
+      <div class="box5">
+        <h2>Our Process</h2>
+        <p>
+          Yobai has developed distinctive features targeted at ensuring no
+          students withdraws from a school without clearing outstanding school
+          fees.
+        </p>
+      </div>
+      <div class="box6">
+        <img src="{% static 'images/image-3.png' %}" class="grid-image">
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <h4>Resources</h4>
+        <a href="#">Our Features</a>
+        <a href="#">Testimonies</a>
+        <a href="#">FAQs</a>
+        <a href="#">Available Schools</a>
+      </div>
+      <div class="footer-wrapper">
+        <h4>Legal</h4>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-wrapper">
+        <h4>Socials</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="search-container">
+          <h4>Newsletter Subscription</h4>
+          <input type="text" name="subscription" id="subscription" placeholder="email address">
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

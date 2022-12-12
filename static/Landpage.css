@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 17px;
+    color: #1C87B9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* The dropdown-login container */
+  .dropdown-login {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown-login button */
+  .dropdown-login .login-btn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #1C87B9;
+    padding: 14px 16px;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown-login:hover .login-btn {
+    background-color: red;
+    transition: all 0.3s ease;
+    
+  }
+  
+  /* Dropdown content login (hidden by default) */
+  .dropdown-content-login {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown content login */
+  .dropdown-content-login a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content-login a:hover {
+    background-color: #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown-login:hover .dropdown-content-login {
+    display: block;
+  }
+  
+
+
+   /* The dropdown-signup container */
+   .dropdown-signup {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown-signup button */
+  .dropdown-signup .signup-btn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #1C87B9;
+    padding: 14px 16px;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown-signup:hover .signup-btn {
+    background-color: red;
+    transition: all 0.3s ease;
+
+  }
+  
+  /* Dropdown content signup (hidden by default) */
+  .dropdown-content-signup {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown content signup */
+  .dropdown-content-signup a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content-signup a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown-signup:hover .dropdown-content-signup {
+    display: block;
+  }
+
+  main{
+    margin-top: 50px;
+    padding: 64px;
+   }
+  .main-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    line-height: 70px;
+    margin-right: 15px;
+ }
+
+ .main-details{
+    margin-top: 16px;
+    font-size: 19px;
+    margin-right: 15px;
+    
+ }
+
+ .main-btn{
+    background-color: #1C87B9;
+    color: #fff;
+    margin-top: 36px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .section1 .main-btn:hover{
+    background-color: red;
+ } 
+
+ .section1{
+    display: flex;
+ }
+
+
+ .main-image{
+    width: 656px;
+    height: 441px;
+    margin-top: -20px;
+    margin-left: 15px;
+    
+ }
+
+ .section2-title{
+    margin-top: 120px;
+    margin-bottom: 40px;
+    font-size: 35px;
+ }
+
+ .section2-flex{
+    display: flex;
+ }
+
+ .icon{
+    padding-left: 90px;
+    margin: 15px;
+ }
+
+ .ha{
+    margin-bottom: 10px;
+    padding-left: 70px;
+    margin-top: 5px;
+ }
+ 
+
+ .hb{
+    margin-bottom: 10px;
+    padding-left: 0px;
+    margin-top: 5px; 
+ }
+
+ .hc{
+    margin-bottom: 10px;
+    padding-left: 0px;
+    margin-top: 5px; 
+ }
+
+ .ptag-details{
+    width: 80%;
+
+    
+ }

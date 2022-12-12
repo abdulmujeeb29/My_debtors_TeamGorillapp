@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        
+        font-size: 14px;
+      }
+      .container {
+        width: 70%;
+        margin: 50px auto;
+        border: 1px solid #1c87b9;
+      }
+      .content-box {
+        background: white;
+        display: flex;
+      }
+      .content-left {
+        flex-basis: 60%;
+        padding: 40px 60px;
+        border: 1px solid #1c87b9;
+        
+      }
+
+      .content-right {
+        flex-basis: 40%;
+        padding: 40px;
+        background: #1c87b9;
+        color: white;
+       
+      }
+      h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 2;
+        font-size: 30px;
+      }
+     
+      .container p {
+        margin-bottom: 40px;
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      .input-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .input-row .input-group {
+        flex-basis: 45%;
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #1c87b9;
+        outline: none;
+        padding-bottom: 5px;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid #1c87b9;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      label {
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      button {
+        background: #1c87b9;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #1c87b9;
+        border: 1px solid #1c87b9;
+      }
+      .content-left h2 {
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .content-right h2 {
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      tr td:first-child {
+        padding-right: 30px;
+      }
+
+      tr td {
+        padding: 20px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        background-color: #1c87b9;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-left: 70px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="head">Connect With Us</h1>
+      <p>
+        We would love to respond to your queries. Feel free to get in touch with us
+      </p>
+      <div class="content-box">
+        <div class="content-left">
+          <h2>Send your request</h2>
+          <form action="#" method="POST">
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your name" />
+              </div>
+              <div class="input-group">
+                <label>Phone</label>
+                <input type="text" placeholder="Phone" />
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email</label>
+                <input type="text" placeholder="Your email" />
+              </div>
+              <div class="input-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Subject" />
+              </div>
+            </div>
+            <label for="#"
+              >Message
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="content-right">
+          <h2>Reach Us</h2>
+          <table>
+            <tr>
+              <td>
+                <strong>Email:</strong>
+                contactyobai@zuri.com
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong> Phone:</strong>
+                +234 9038570218
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Address:</strong>
+                3rd Floor, Oakwood building, Zuri Way
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <a href="faq" target="_blank">Frequently asked Questions</a>
+
+  </body>
+</html>

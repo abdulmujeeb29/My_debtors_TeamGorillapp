@@ -1,0 +1,424 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contend</title>
+	<style>
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: auto;
+
+}
+body{
+  background: rgb(247, 244, 244);
+}
+.wrapper{
+  margin: 10px;
+
+}
+.wrapper .top_navbar{
+  width: calc(100% - 20px);
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+
+}
+
+.wrapper .top_navbar .hamburger{
+  width: 70px;
+  height: 100%;
+  background: #41769a;
+  padding: 15px 17px;
+  
+  cursor: pointer;
+}
+
+.wrapper .top_navbar .hamburger div{
+  width: 35px;
+  height: 4px;
+  background: #6dc6eb;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.wrapper .top_navbar .top_menu{
+  width: calc(100% - 70px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #41769a;
+
+}
+
+.wrapper .top_navbar .top_menu .logo{
+  color: #41769a;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.wrapper .top_navbar .top_menu ul{
+  display: flex;
+  
+  
+}
+
+.wrapper .top_navbar .top_menu ul li a{
+  display: block;
+  margin: 0 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #41769a;
+  border-radius: 50%;
+  color: #41769a;
+  background-color: white;
+  
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover{
+  background: #41769a;
+  color: #fff;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover i{
+  color: white;
+  
+}
+
+.wrapper .sidebar{
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  background: #41769a;
+  width: 200px;
+  height: calc(100% - 80px);
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s ease;
+  
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    color: white;
+    white-space: nowrap;
+    
+}
+
+.wrapper .sidebar ul li a:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #92a6e2;
+  display: none;
+}
+
+.wrapper .sidebar ul li a span.icon{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title{
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  background: #5da9dd;
+  color: #fff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+
+.wrapper .main_container{
+  width: (100% - 200px);
+  height: 100%;
+  margin-top: 70px;
+  margin-left: 150px;
+  padding: 0  0 30px  0;
+  transition: all 0.3s ease;
+  
+}
+
+.wrapper .main_container .item{
+  background: rgb(247, 244, 244);
+  margin: 50px;
+
+  /* margin-bottom: 50px; */
+  padding: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  
+}
+
+
+.wrapper.collapse .sidebar{
+  width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a{
+  text-align: center; 
+}
+
+.wrapper.collapse .sidebar ul li a span.icon{
+  margin: 0;
+}
+
+.wrapper.collapse .sidebar ul li a span.title{
+  display: none;
+}
+
+.wrapper.collapse .main_container{
+  width: (100% - 70px);
+  margin-left: 70px;
+
+}
+
+
+
+  select{
+    width: 35%;
+    padding: 6px 12px;
+  }  
+
+
+  /* styling Notifications */
+  /* icon */
+
+  /* top-bar icons */
+  .icon{
+    margin-right: 30px;
+  }
+  .icon span{
+    background-color: #f00;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    vertical-align: top;
+  
+  }
+
+  .icon img{
+    display: inline-block;
+    width: 40px;
+    margin-top: 20px;
+  }
+
+
+  .notify-box{
+    width: 300px;
+    border: 1px solid red;
+    height: 0px;
+    opacity: 0;
+    font-size: 12px;
+    position: absolute;
+    top: 63px;
+    transition: 1s opacity, 250ms height;
+    
+  }
+
+  .notify-box h2{
+    font-size: 14px;
+    padding: 2px;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+
+  .notify-box h2 span{
+    color: #f00;
+    font-weight: 800;
+  }
+  .notify-item{
+    display: flex;
+    
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+ 
+  .notify-item img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+  .notify-item .text h4{
+    color: #f00;
+    font-size: 10px;
+    
+  }
+
+
+    </style>
+
+	<script src="{% static 'https://kit.fontawesome.com/b99e675b6e.js' %}"></script>
+	<script src=" {% static 'https://code.jquery.com/jquery-3.4.1.min.js' %}"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+    
+    <div class="top_menu">
+      <div class="logo"> <img src="{% static 'asset/images/small-logo.png' %}" alt=" small logo"></div>
+      <ul>
+        <div class="icon" onclick="toggleNotify()">
+        <li><a href="#">
+          <i class="fas fa-bell"></i>
+          </a></li>
+        </div>
+          <!-- <div class="not-dropdown"> -->
+<div class="notify-box" id="box">
+  <h2>Notification <span>8</span></h2> 
+  <div class="notify-item">
+    <img src="{% static 'asset/images/prof-1.jfif' %}" alt="img-1">
+    <div class="text">
+      <h4>AbdulMujeeb Rae</h4>
+      <p>Thank you very much, <br> my debt has been cleared</p>
+    </div>
+</div>
+
+<div class="notify-item">
+  <img src="{% static 'asset/images/prof-4.jpg' %}" alt="img-2">
+  <div class="text">
+    <h4>Abdul James</h4>
+    <p>Thank you very much, <br> my debt has been cleared</p>
+  </div>
+</div>
+
+<div class="notify-item">
+  <img src="{% static 'asset/images/prof-5.jpg' %}" alt="img-3">
+  <div class="text">
+    <h4>Jane Doe</h4>
+    <p>I am still waiting for a <br> review of my status</p>
+  </div>
+</div>
+
+<div class="notify-item">
+  <img src="{% static 'asset/images/prof-1.jfif' %}" alt="img-4">
+  <div class="text">
+    <h4>Denzel June</h4>
+    <p>Thank you for the prompt <br> response</p>
+  </div>
+</div>
+
+<div class="notify-item">
+  <img src="{% static 'asset/images/prof-4.jpg' %}" alt="img-5">
+  <div class="text">
+    <h4>Johnson Cole</h4>
+    <p>Thank you very much,<br> my debt has been cleared</p>
+  </div>
+</div>
+
+</div>
+        <li><a href="#">
+          <i class="fas fa-user"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+    
+      <ul>
+        <li><a href="#">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span class="title">Home</span></a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
+          <span class="title">Debts</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
+          <span class="title">Complaint</span>
+          </a></li>
+    </ul>
+  </div>
+  
+
+  
+  <div class="main_container">
+    <div class="item">
+      
+      <h3>Kindly Select reason for Contend</h3> <br>
+      <label for="reason">REASON</label>
+      <select name="" id="reason">
+        <option value="reason">Options applicable</option>
+      <option value="reason">Overcharge by School</option>
+      <option value="reason">Debt Cleared</option>
+    </select>
+    <br> <br> <br> 
+    <form action="#" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        <h3 style="color: #41769a">
+            SELECT A FILE TO UPLOAD
+        </h3>
+        <br> 
+        <input type="file" name="fileupload" id="fileupload">
+        <input type="submit" value="Upload">
+        
+        
+            </form>
+  </div>
+
+</div>
+</div>
+</div>
+ 
+
+
+<script>
+var box = document.getElementById("box");
+var down = false;
+
+function toggleNotify() {
+  if (down){
+box.style.height = "0px";
+box.style.opacity = 0;
+down = false;
+  } else{
+    box.style.height = "510px";
+box.style.opacity = 1;
+down = true;
+  }
+}
+
+
+
+</script>
+</body>
+</html>
