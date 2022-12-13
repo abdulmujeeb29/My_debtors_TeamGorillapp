@@ -154,7 +154,7 @@ def forgot(request):
 def student_debtors(request):
     students=Student.objects.all()
     serializer = StudentSerializer(students ,many=True)
-    return Response (serializer.data)
+    return Response(serializer.data)
 
 @api_view(['POST'])
 def post_debtors(request):
@@ -198,10 +198,7 @@ def faq(request):
 import json 
 
 def addstudent(request):
-    # student = Student(school_id = request.POST['school_id'],Name=request.POST['Name'],Class=request.POST['Class'],debt_owed =request.POST['debt_owed'])
-    # student.save();
-
-    # return redirect('addstudent')
+    
     return render(request,'addstudent.html')
 
 def create(request):

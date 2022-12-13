@@ -305,7 +305,7 @@ margin-right: 20px;
 
 
     </style>
-
+  <script>src="https://ajax.googleapis.com/ajax/libs"</script>
 	<script src=" {% static 'https://kit.fontawesome.com/b99e675b6e.js' %}"></script>
 	<script src="{% static 'https://code.jquery.com/jquery-3.4.1.min.js' %}"></script>
 	<script>
@@ -315,9 +315,18 @@ margin-right: 20px;
 			});
 		});
 	</script>
+   <script>
+     $(document).ready(function() {
+                $('main').on("copy", function(e) {
+                e.preventDefault();
+                $("#copy").text('you can not copy this');
+            });
+      });
+   </script>
 </head>
-<body>
 
+<body>
+<main id="copy">
 <div class="wrapper">
   <div class="top_navbar">
     <div class="hamburger">
@@ -378,8 +387,8 @@ margin-right: 20px;
 </div>
 
 </div>
-        <li><a href="#">
-          <i class="fas fa-user"></i>
+        <li><a href="signout">
+          <i class="fas fa-user"></i>SIGNOUT
           </a></li>
       </ul>
     </div>
@@ -509,5 +518,6 @@ down = true;
 
 
 </script>
+</main>
 </body>
 </html>

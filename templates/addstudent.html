@@ -189,16 +189,29 @@ body{
 
 </head>
 <body>
+<!-- <form id="post_form ">
+  {%csrf_token%}
+  <input type="text" name="Name" id="Name" > <br>
 
+  <input type="text" name="school_id" id="school_id" ><br>
+
+  <input type="text" name="Class" id="Class" > <br>
+
+  <input type="number " name="debt_owed" id="debt_owed" > <br>
+
+  <input type="submit" id="submit" name="submit ">
+
+</form> -->
 
 <div class="wrapper">
     <div class="title">
     ADD STUDENT FORM
     </div>
     
-    <div class="form">
-        <form id="post_form " >
+    <div class="form" >
+        <form id="post-form " >
           {% csrf_token %}
+        
 
             <h5 ></h5>
        <div class="inputfield">
@@ -213,7 +226,7 @@ body{
         <label>Class</label>
         <input type="text" name="Class" id="Class" class="input">
      </div> 
-     <div class="inputfield">
+      <div class="inputfield">
         <label>Gender</label>
         <div class="custom_select">
           <select>
@@ -226,11 +239,11 @@ body{
      <div class="inputfield">
         <label>School ID</label>
         <input type="number" class="input">
-     </div>  
+      </div>  
        <div class="inputfield">
         <label>Guardian Name</label>
         <input type="text" class="input">
-     </div> 
+     </div>  
      
       <div class="inputfield">
           <label>Debt Owed</label>
@@ -247,29 +260,27 @@ body{
       </div>
       </form>
     </div>
-</div>	
+</div>	 
 
 <script type="text/javascript">
-    $(document).on('submit','#post-form',function(e){
-      e.preventDefault();
-  
-      $.ajax({
-        type:'POST',
-        url:'/create',
-        data:{
-            school_id:$('#school_id').val(),
-            Name:$('#Name').val(),
-            Class:$('#Class').val(),
-            debt_owed:$('#debt_owed').val(),
-          csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
-        },
-        success: function(data){
-            $("h5").html(data)
-          //alert(data)
-        }
-      });
-    //   document.getElementById('message').value = ''
+$(document).on('submit','#post-form',function(e){
+  e.preventDefault();
+
+    $.ajax({
+      type:'POST',
+      url:"http://127.0.0.1:8000/post",
+      data:{
+        school_id:$('#school_id').val(),
+        Name:$('#Name').val(),
+        Class:$('#Class').val(),
+        debt_owed:$('#debt_owed').val(),
+        csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+      },
+      success: function(data){
+        alert(data) ;
+      }
     });
-  </script>
+});
+</script>
 </body>
 </html>

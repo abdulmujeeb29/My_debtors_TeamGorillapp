@@ -176,7 +176,7 @@ body{
 .container-2{
   display: flex;
   height: 350px;
-  width: 800px;
+  width: 1000px;
   justify-content: space-between;
   
 }
@@ -192,6 +192,7 @@ body{
 .container-2 .left{
   flex-basis: 65%;
   background-color: white;
+  margin-left: 110px;
 
 }
 .container-2 .left button{
@@ -326,7 +327,11 @@ body{
     font-size: 10px;
     
   }
+  .student{
+    padding-left: 50px;
 
+
+  }
 
     </style>
 
@@ -404,8 +409,8 @@ body{
 </div>
 
 </div>
-        <li><a href="#">
-          <i class="fas fa-user"></i>
+        <li><a href="signout">
+          <i class="fas fa-user"></i> SIGNOUT
           </a></li>
       </ul>
     </div>
@@ -439,7 +444,7 @@ body{
       {% if user.is_authenticated %}
      <br> <p> <small>Hello</small> <span style="font-size: 18px;"> <strong>{{user.username.capitalize }}</strong></span></p>
       {% endif%}
-     <p> <small>What would you like to do today</small></p>
+     <p> <small>Here is the list of debtors in our school</small></p>
   </div>
 
 
@@ -455,7 +460,7 @@ body{
 
     </div>
     <script>
-      $(document).ready(function(){
+    $(document).ready(function(){
       
       setInterval(function(){
           $.ajax({
@@ -469,10 +474,14 @@ body{
                   {
                       var temp= $('<span class="span-1"><h1>' +data[i].school_id+' </h1> </span>'+ '<span class="span-2">  '+data[i].Name+ ' </span>' +'<span class="span-1">' +data[i].Class+'</span>' +'<span class="span-1"> <button>' +data[i].debt_owed+'</button></span>');
                       $("#display").append(temp);
+
+
+                      // var temp= $('<h1 class="student ">' +data[i].school_id+  '</h1>'+ '<span class= "student"> ' +data[i].Name+ ' </span>' +'<span class= "student">' +data[i].Class+'</span>' +'<span class= "student"> <button>' +data[i].debt_owed+'</button></span>');
+                      // $("#display").append(temp);
                   }
               },
               error: function(response){
-                  alert('An error occured')
+                alert('An error occured')
               }
           });
       },1000);
