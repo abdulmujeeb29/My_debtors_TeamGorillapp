@@ -90,12 +90,8 @@ A platform that allows schools in a certain locality list directory of people ow
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 
 * __Database__<br/>
-![SQLite](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdevopedia.org%2Fsqlite&psig=AOvVaw19MCwRKp8AjAzVtUlrHw_E&ust=1671133020908000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJC94uLt-fsCFQAAAAAdAAAAABAEColor=white)
-![sqlite](https://user-images.githubusercontent.com/114662139/207699805-709bda05-e399-4f60-ab76-6fd2d81f20a2.svg)
 
-
-* __Database__<br/>
-![SQLite](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![sqlite](https://user-images.githubusercontent.com/114662139/207699805-709bda05-e399-4f60-ab76-6fd2d81f20a2.svg width=100px)
 
 * __Project Management and Version Control__<br/>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
