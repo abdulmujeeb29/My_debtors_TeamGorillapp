@@ -2,7 +2,7 @@
 
 A platform that allows schools in a certain locality list directory of people owing them to help them avoid going to other schools.
 
-[**Live link**](http://mydebtorsteamgorillapp-production-b838.up.railway.app)
+[**Live link**](https://bakapo.pythonanywhere.com/)
 
 
 
