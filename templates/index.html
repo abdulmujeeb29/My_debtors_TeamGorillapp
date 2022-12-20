@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href=" {% static 'Landpage.css' %}" />
+    <link rel="preconnect" href=" {% static 'https://fonts.googleapis.com' %}" />
+    <link rel="preconnect" href=" {% static 'https://fonts.gstatic.com' %}" crossorigin />
+    <link
+      href=" {% static 'https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap' %}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div>
+          <img
+            src="{% static 'image2.png' %}"
+            alt="logo"
+            class="img-logo"
+          />
+        </div>
+
+        <div class="navbar">
+          <a class="nav-link" href="/"> Home </a>
+          <a class="nav-link" href="aboutus"> About Us </a>
+          <a class="nav-link" href="contactus"> Contact Us </a>
+          <a class="nav-link" href="testimonial"> Testimonies </a>
+          
+
+          <div class="dropdown-login">
+            <button class="login-btn">
+              Log In
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-login">
+              <a href="parentlogin">As Parent</a>
+              <a href="schoollogin">As School</a>
+            </div>
+          </div>
+
+          <div class="dropdown-signup">
+            <button class="signup-btn">
+              Sign Up
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-signup">
+              <a href="parentregister">As Parent</a>
+              <a href="schoolregister">As School</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <section class="section1">
+        <div>
+          <h1 class="main-title">
+            All Inclusive Debt <span>Management System</span>
+            <span>For Schools</span>
+          </h1>
+          <p class="main-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+            non animi voluptate iure iste, itaque facilis, voluptatibus
+            possimus, recusandae eius. Commodi natus ea, animi modi incidunt
+            numquam dignissimos.
+          </p>
+          <button class="main-btn">Get Started</button>
+        </div>
+
+        <div>
+          <img
+            src=" {% static 'mainimage.png' %}"
+            alt="image"
+            class="main-image"
+          />
+        </div>
+      </section>
+
+      <section class="section2">
+        <h2 class="section2-title">Our Features</h2>
+
+        <div class="section2-flex">
+          <div>
+            <img
+              src=" {% static 'Frame23.png' %} "
+              alt="image"
+              class="icon"
+            />
+            <h3 class="ha">We track debtors</h3>
+            <p class="ptag-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              assumenda repellendus distinctio natus nam totam doloribus.
+            </p>
+          </div>
+
+          <div>
+            <img
+              src=" {% static 'Frame24.png' %}"
+              alt="image"
+              class="icon"
+            />
+            <h3 class="hb">Bridge gap between parents and school</h3>
+            <p class="ptag-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              assumenda repellendus distinctio natus nam totam doloribus.
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="{% static 'Frame25.png' %}"
+              alt="image"
+              class="icon"
+            />
+            <h3 class="hc">Help schools keep financial records of students</h3>
+            <p class="ptag-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              assumenda repellendus distinctio natus nam totam doloribus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

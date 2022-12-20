@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SChool Login</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* main container */
+.container{
+        display: flex;
+        height: 600px;
+        width: 800px;
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid #1c87b9;
+    }
+
+    /* form */
+    .left-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+       
+       
+    }
+
+    header p{
+        font-size: 25px;
+        margin: 40px;
+    }
+    #box{
+        padding: 5px;
+        width: 80%;
+        margin: 15px;
+        border: 1px solid #1c87b9;
+        outline: none;
+
+    }
+    .key-btn{
+        padding: 3px 20px; 
+        background-color: #1c87b9;
+        color: white;
+        font-size: 12px;
+        margin-left: 25%;
+        border-radius: 5px;
+    }
+#submit{
+    padding: 10px 15px;
+    width: 50%;
+    color: white;
+    margin-top: 40px;
+    margin-left: 25%;
+    background-color: #1c87b9;
+    font-size: 15px;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+  
+}
+form a{
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+    
+}
+form a:hover{
+    color: #1c87b9;
+}
+
+    .right-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        overflow: hidden ;
+    }
+    .right-content img{
+        width: 450px;
+        height: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+        
+            <header>
+                <br>  <br>
+                <img src=" {% static '/asset/images/Yobai logo 3.jpg' %}" alt="Logo %}" height="100px" width="250px">
+                <p style="text-align:center">GUARDIAN LOGIN</p>
+            </header>
+            {% for message in messages %}
+            <h5>{{message}}</h5>
+            {% endfor %}
+            <form  action="parentlogin" method="POST"  class="label">
+                {% csrf_token%}
+                <div>
+        <label>FIRST NAME</label>
+        <input type="text" name="username" id="box" placeholder="Enter Email Address" required>
+        </div>
+        
+        <div>
+        <label>Password</label>
+        <input type="password" name="password1" id="box" placeholder="Enter Password" required> 
+        </div>
+        <div>
+            <input type="checkbox" name="Remember" id=""> Remember me
+        </div>
+     
+        
+        <div>
+        <input type="submit" value="Login" id="submit">
+        </div>
+        <br>
+        <a href="forgot" target="_blank">Forgot password?</a>
+            </form>
+        
+        </div>
+        <!-- right -->
+        <div class="right-content">
+        <img src=" {% static '/asset/images/login-p.png' %}" alt="login-img">
+        
+            
+        </div>
+        
+        
+            </div>
+</body>
+</html>

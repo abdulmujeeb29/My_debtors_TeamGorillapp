@@ -2,7 +2,7 @@
 
 A platform that allows schools in a certain locality list directory of people owing them to help them avoid going to other schools.
 
-[**Live link**](https://zuri-training.github.io/My_debtors_TeamGorillapp/)
+[**Live link**](https://bakapo.pythonanywhere.com/)
 
 
 
@@ -90,7 +90,7 @@ A platform that allows schools in a certain locality list directory of people ow
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 
 * __Database__<br/>
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 * __Project Management and Version Control__<br/>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
