@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  margin-top: 52px;
+  margin-top: 30px;
   margin-right: 64px;
   display: flex;
   justify-content: flex-end;
@@ -35,27 +35,29 @@ header {
 /* text */
 .text-small {
   font-family: lato sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
 }
 .text-mid {
   font-family: lato sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 .text-big {
   font-family: Lato sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 0em;
 }
 
 .container-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .reg {
   display: flex;
-  gap: 15px;
+  /* gap: 15px; */
+  height: 100vh;
+  max-height: fit-content;
   /* margin-bottom: auto; */
 }
 
@@ -82,7 +84,7 @@ input[type="number"],
 input[type="tel"] {
   width: 100%;
   padding: 5px;
-  margin: 5px 0 22px 0;
+  margin: 0 0 15px 0;
   display: inline-block;
   border: 1px solid black;
   border-radius: 2px;
@@ -104,10 +106,10 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #4caf50;
+  background-color: #1c87b9;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  padding: 16px 25px;
+  margin: 8px 5px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -146,5 +148,10 @@ main {
 
 .reg .container .name {
   display: flex;
-  gap: 20px;
+  gap: 50px;
+}
+
+.container .container-header .text-big .container-header-span {
+  display: inline-block;
+  width: 100%;
 }
