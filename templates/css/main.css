@@ -1,0 +1,157 @@
+* {
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+header {
+  margin-top: 30px;
+  margin-right: 64px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top .Sign-Up {
+  font-size: 32px;
+  font-weight: 700;
+  /* line-height: 40px; */
+  border-bottom: 5px solid rgba(28, 135, 185, 1);
+  min-width: 600px;
+  color: rgba(28, 135, 185, 1);
+}
+
+.top {
+  display: flex;
+  height: 80px;
+  gap: 5px;
+  /* width: 270px; */
+  text-align: center;
+}
+
+/* text */
+.text-small {
+  font-family: lato sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.text-mid {
+  font-family: lato sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.text-big {
+  font-family: Lato sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.container-header {
+  margin-bottom: 10px;
+}
+.reg {
+  display: flex;
+  /* gap: 15px; */
+  height: 100vh;
+  max-height: fit-content;
+  /* margin-bottom: auto; */
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+form {
+  flex-grow: 1;
+}
+
+.top .Sign-Up a,
+.top .log-in a {
+  text-decoration: none;
+  color: rgba(28, 135, 185, 1);
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="tel"] {
+  width: 100%;
+  padding: 5px;
+  margin: 0 0 15px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 2px;
+
+  /* background: #f1f1f1; */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  /* background-color: #ddd; */
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #1c87b9;
+  color: white;
+  padding: 16px 25px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#register_as_school {
+  left: 50px;
+}
+#register_as_school {
+  left: 450px;
+}
+
+main {
+  position: relative;
+}
+.container .container-header p a {
+  text-decoration: none;
+  color: rgba(28, 135, 185, 1);
+}
+
+.reg .container .name {
+  display: flex;
+  gap: 50px;
+}
+
+.container .container-header .text-big .container-header-span {
+  display: inline-block;
+  width: 100%;
+}
